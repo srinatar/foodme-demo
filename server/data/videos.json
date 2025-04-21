@@ -1,0 +1,32 @@
+{
+  "assets": [
+    {
+      "assetId": 126,
+      "assetName": "Making Tacos",
+      "streamUrl": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8",
+      "passwordProtected": false,
+      "thumbnailUrl": "img/food-videos/tacos-pastor-mexican-food-tortillas-food-plugs-mexico.jpg"
+    },
+    {
+      "assetId": 237,
+      "assetName": "An Easy, Summery Tomato Pasta That's Ready for Fall",
+      "streamUrl": "https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8",
+      "passwordProtected": false,
+      "thumbnailUrl": "img/food-videos/pasta-food-breakfast-lunch-dinner-plate.jpg"
+    },
+    {
+      "assetId": 348,
+      "assetName": "Ginger Chicken With Peanut Sauce, Coconut Rice With Shrimp and Corn",
+      "streamUrl": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
+      "passwordProtected": true,
+      "thumbnailUrl": "img/food-videos/grilled-chicken-cook-food.jpg"
+    },
+    {
+      "assetId": 459,
+      "assetName": "French Fries Fish and Chips",
+      "streamUrl": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
+      "passwordProtected": false,
+      "thumbnailUrl": "img/food-videos/desktop-wallpaper-french-fries-fish-fish-and-chips.jpg"
+    }
+  ]
+}

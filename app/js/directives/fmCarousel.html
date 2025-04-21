@@ -1,0 +1,23 @@
+<div id="fm-carousel-wrapper" class="carousel_wrapper">
+  <div class="carousel">
+    <div ng-repeat="asset in assets">
+      <div class="carousel_item">
+        <a href="#/auth/{{asset.assetId}}" ng-show="asset.passwordProtected">
+          <div class="protected-overlay">
+            <img src="https://cdn-icons-png.flaticon.com/128/483/483408.png"></img>
+          </div>
+        </a>
+        <a href="#/video/{{asset.assetId}}">
+          <img class="carousel_thumbnail" ng-src="{{asset.thumbnailUrl}}" alt="">
+          <span class="carousel_item_label">
+            {{asset.assetName}}
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel_nav">
+    <div id="carousel_nav_item_prev" class="carousel_nav_item" aria-role="button" data-dir="prev">&#xab;</div><div id="carousel_nav_item_next" class="carousel_nav_item" aria-role="button" data-dir="next">&#xbb;</div>
+  </div>
+</div>

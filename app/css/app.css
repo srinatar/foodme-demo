@@ -1,0 +1,440 @@
+/****************************************
+ * general purpose css-only components  *
+ ****************************************/
+
+.fm-panel {
+  background-color: #fff;
+
+  border: 1px solid black;
+
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  border-top-left-radius: 3px;
+
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-right-radius: 3px;
+
+  margin-bottom: 20px;
+  padding: 10px 10px 20px 10px;
+
+  overflow: hidden;
+}
+
+.fm-panel > h4 {
+  background-color: #E5E5E5;
+  margin: -10px -10px 10px -10px;
+  padding: 10px 10px 10px 10px;
+}
+
+
+.fm-right {
+  text-align: right;
+}
+
+
+
+/****************************************
+ * angular components                   *
+ ****************************************/
+
+.fm-rating {
+  color: #a9a9a9;
+  margin: 0;
+  padding: 0;
+
+}
+
+ul.fm-rating {
+  display: inline-block;
+}
+
+.fm-rating-pointer {
+  cursor: pointer;
+}
+
+.fm-rating li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fm-rating .fm-selected {
+  color: #000000;
+}
+
+.fm-rating .fm-hover {
+  text-shadow: white 0 0  2px,
+  white 0 0  2px,
+  white 0 0  2px,
+  white 0 0  2px,
+  blue  0 0 10px;
+}
+
+fm-rating a {
+  visibility: hidden;
+  padding-left: 7px;
+}
+
+fm-rating:hover a {
+  visibility: visible;
+}
+
+
+.fm-deliver-to {
+  display: block;
+  width: 450px;
+}
+
+
+input.ng-invalid.ng-dirty {
+  border-color: #E9322D;
+  -webkit-box-shadow: 0 0 6px #F8B9B7;
+  -moz-box-shadow: 0 0 6px #f8b9b7;
+  box-shadow: 0 0 6px #F8B9B7;
+}
+
+
+
+
+/****************************************
+ * route specific css                   *
+ ****************************************/
+
+
+/* customer */
+
+.fm-customer-bkg {
+  background-image: url(../img/customer_bkg.jpg);
+  opacity: 0.4;
+  height: 705px;
+}
+
+
+/* restaurant list */
+
+.fm-restaurant-list {
+  min-height: 646px !important;
+}
+
+.fm-restaurant-list table {
+  margin: -10px -20px -20px -10px;
+  width: 700px;
+}
+
+.fm-restaurant-list th:first-child {
+  width: 500px;
+}
+
+.fm-restaurant-list th {
+  width: 100px;
+}
+
+.fm-restaurant-list img {
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+
+/* menu */
+
+.fm-restaurant  {
+  margin-bottom: 20px;
+}
+
+.fm-restaurant h3 {
+  margin-top: 0;
+}
+
+.fm-restaurant img {
+  width: 150px;
+  height: 150px;
+}
+
+.fm-restaurant .fm-rating {
+  display: block;
+}
+
+.fm-menu-list li {
+  list-style-type: none;
+}
+
+.fm-menu-list li span {
+  padding-right: 20px;
+}
+
+.fm-menu-list a {
+  color: inherit;
+}
+
+.fm-menu-list a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fm-menu-list .icon-plus-sign {
+  visibility: hidden;
+}
+
+.fm-menu-list li:hover .icon-plus-sign {
+  visibility: visible;
+}
+
+.fm-menu-list li:hover {
+  color: black;
+}
+
+.fm-menu-list ul li {
+  text-align: center;
+}
+
+.fm-cart li {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.fm-cart .icon-remove-sign {
+  visibility: hidden;
+}
+
+.fm-cart li:hover .icon-remove-sign {
+  visibility: visible;
+}
+
+.fm-cart form {
+  padding-left: 2px;
+}
+
+.fm-cart p {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+
+/* checkout */
+
+.fm-checkout table {
+  width: 960px;
+  margin-left: -10px;
+}
+
+.fm-checkout table th:nth-child(2),
+.fm-checkout table td:nth-child(2) {
+  width: 100%;
+  text-align: left;
+}
+
+.fm-checkout table td:nth-child(1) input {
+  width: 30px;
+  box-sizing: content-box  !important;
+}
+
+.fm-checkout table th,
+.fm-checkout table td {
+  text-align: right;
+}
+
+.fm-checkout table tr:last-child th {
+  text-align: right;
+}
+
+input.ng-invalid {
+  border: 1px solid red;
+}
+
+form {
+  padding: 0px             !important;
+  background-color: #fff   !important;
+}
+
+
+/* Carousel CSS Starts */
+.carousel_wrapper {
+	display: grid;
+	grid-template-rows: 1fr max-content;
+	grid-gap: 0.4em;
+	position: relative;
+	line-height: 1;
+  margin-top: 40px;
+}
+
+.carousel {
+	position: relative;
+	overflow-x: clip;
+}
+
+.carousel_item {
+	position: absolute;
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.1);
+	top: 0;
+	transition: all ease-in-out 800ms;
+	box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
+  display: flex;
+  height: 200px;
+}
+
+.carousel_item a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.carousel_item a:hover {
+  color: #eeeeee;
+}
+
+.carousel_thumbnail {
+  width: 100%;
+  height: 200px;
+  float: left;
+  position: absolute;
+  opacity: 80%;
+}
+
+.carousel_item span {
+  padding: 0;
+  position: absolute;
+  width: 90%;
+  bottom: 1em;
+  left: 1em;
+  filter: drop-shadow(2px 2px 2px #000);
+}
+
+.carousel_item_active {
+	background-color: #fff;
+	top: -1rem;
+}
+
+.carousel_nav {
+	width: max-content;
+	margin: 0 auto;
+}
+
+.carousel_nav_item {
+	display: inline-block;
+	padding: 0.4em;
+	box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
+	background: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+	margin: 0 0.2em;
+	border-radius: 8px;
+	transition: all ease-in-out 300ms;
+}
+
+.carousel_nav_item:hover {
+	background-color: #fff;
+}
+
+.protected-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index:9997;
+  background: rgba(0,0,0, 25%);
+}
+
+.protected-overlay a {
+  width: 100%;
+  height: 100%;
+}
+
+.protected-overlay img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+/* Autocomplete start */
+.form-control {
+  outline: 0;
+  border-color: #ECECEC;
+  border-style: solid;
+  border-width: 1px;
+  width: 95%;
+  background-color: #ffffff;
+  padding: 6px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.angucomplete-holder {
+  position: relative;
+  height: 120px;
+}
+
+.angucomplete-dropdown {
+  border-color: #ececec;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  width: 250px;
+  padding: 6px;
+  cursor: pointer;
+  z-index: 9999;
+  position: absolute;
+  /*top: 32px;
+  left: 0px;
+  */
+  margin-top: -6px;
+  background-color: #ffffff;
+}
+
+.angucomplete-searching {
+  color: #acacac;
+  font-size: 14px;
+}
+
+.angucomplete-description {
+  font-size: 14px;
+}
+
+.angucomplete-row {
+  padding: 5px;
+  color: #000000;
+  margin-bottom: 4px;
+
+}
+
+.angucomplete-selected-row, .angucomplete-row:hover {
+  background-color: lightblue;
+  color: #ffffff;
+}
+
+.angucomplete-image-holder {
+  padding-top: 2px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.angucomplete-image {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  border-color: #ececec;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.angucomplete-image-default {
+  /* Add your own default image here
+   background-image: url('/assets/default.png');
+  */
+  background-position: center;
+  background-size: contain;
+  height: 34px;
+  width: 34px;
+}
+/* Autocomplete end */

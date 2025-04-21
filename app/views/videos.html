@@ -1,0 +1,21 @@
+<div class="fm-panel">
+  <h4>Recipe videos</h4>
+  <div>
+    <p>Watch some examples of how we make our food!</p>
+    <fm-carousel gap="1" size="2" active-class="false" assets="assets"></fm-carousel>
+  </div>
+  <h5>Search</h5>
+  <div>
+    <fm-angucomplete id="ex1"
+      placeholder="Search recipes"
+      pause="100"
+      selectedobject="selectedSearchResult"
+      localdata="assets"
+      searchfields="assetName"
+      titlefield="assetName"
+      minlength="1"
+      imagefield="false"
+      inputclass="form-control form-control-small"/>
+
+  </div>
+</div>
