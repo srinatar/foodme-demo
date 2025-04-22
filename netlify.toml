@@ -1,0 +1,29 @@
+# Allow static assets to be served directly
+[[redirects]]
+  from = "/app/img/*"
+  to = "/app/img/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/app/css/*"
+  to = "/app/css/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/app/js/*"
+  to = "/app/js/:splat"
+  status = 200
+
+# (Add more rules for other asset folders if needed)
+
+# SPA Fallback: Only redirect other /app/* requests to index.html
+[[redirects]]
+  from = "/app/*"
+  to = "/app/index.html"
+  status = 200
+
+# Optional: Redirect root to /app/index.html
+[[redirects]]
+  from = "/"
+  to = "/app/index.html"
+  status = 200
