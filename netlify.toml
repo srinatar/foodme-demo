@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/"
-  to = "/app/index.html"
-  status = 200
